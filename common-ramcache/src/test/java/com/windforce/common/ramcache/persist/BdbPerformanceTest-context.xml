@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:bdb="http://www.my9yu.com/common/bdb"
+	   xmlns="http://www.springframework.org/schema/beans"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+
+
+
+
+http://www.my9yu.com/common/bdb http://www.my9yu.com/common/bdb/bdb-1.0.xsd">
+
+	<!-- 开启注释配置 -->
+	<context:annotation-config/>
+
+	<!-- BDB数据环境配置 -->
+	<bdb:database id="database" home="target/database" config="classpath:bdb.properties">
+		<bdb:entity>
+			<bdb:package name="com.my9yu.common.ramcache.queue"/>
+		</bdb:entity>
+		<bdb:proxy>
+			<bdb:package name="com.my9yu.common.bdb.proxy"/>
+		</bdb:proxy>
+		<bdb:version strategy="simple"/>
+		<bdb:debug ddl="CREATE"/>
+	</bdb:database>
+
+	<bean id="accessor" class="com.my9yu.common.ramcache.orm.impl.BdbAccessor"/>
+
+</beans>

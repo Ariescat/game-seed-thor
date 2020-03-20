@@ -1,0 +1,33 @@
+package com.test.http.client;
+
+import com.windforce.client.WsynHttpClient;
+import junit.framework.TestCase;
+import org.junit.Test;
+
+/**
+ * 提交了一个测试修改
+ *
+ * @author windforce
+ * 再测试一次修改pull
+ * windforce修改注释
+ */
+public class SimpleHttpClient {
+
+	@Test
+	public void test() {
+		WsynHttpClient client = new WsynHttpClient("http://127.0.0.1:8082");
+		try {
+			client.execute(true);
+		} catch (Exception e) {
+			e.printStackTrace();
+			TestCase.fail();
+		}
+
+		try {
+			Thread.sleep(100000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}
