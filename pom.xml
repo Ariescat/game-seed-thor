@@ -19,7 +19,7 @@
 		<hibernate.version>5.1.0.Final</hibernate.version>
 		<guava.version>24.0-jre</guava.version>
 		<poi.version>3.7</poi.version>
-		<netty.version>4.1.21.Final</netty.version>
+		<netty.version>4.1.42.Final</netty.version>
 	</properties>
 
 	<modules>
