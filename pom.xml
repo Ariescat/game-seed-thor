@@ -17,7 +17,7 @@
 		<aspectjrt.version>1.8.13</aspectjrt.version>
 		<cglib.version>2.2</cglib.version>
 		<hibernate.version>5.1.0.Final</hibernate.version>
-		<guava.version>24.0-jre</guava.version>
+		<guava.version>24.1.1-jre</guava.version>
 		<poi.version>3.7</poi.version>
 		<netty.version>4.1.21.Final</netty.version>
 	</properties>
