@@ -4,8 +4,8 @@
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.thor.common</groupId>
-	<artifactId>thor</artifactId>
+	<groupId>com.ariescat</groupId>
+	<artifactId>game-seed.zeus</artifactId>
 	<version>1.5</version>
 	<packaging>pom</packaging>
 
@@ -67,42 +67,42 @@
 		<dependencies>
 			<!--自己的模块-->
 			<dependency>
-				<groupId>com.thor.common</groupId>
+				<groupId>com.ariescat</groupId>
 				<artifactId>common-agent</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.thor.common</groupId>
+				<groupId>com.ariescat</groupId>
 				<artifactId>common-event</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.thor.common</groupId>
+				<groupId>com.ariescat</groupId>
 				<artifactId>common-net</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.thor.common</groupId>
+				<groupId>com.ariescat</groupId>
 				<artifactId>common-ramcache</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.thor.common</groupId>
+				<groupId>com.ariescat</groupId>
 				<artifactId>common-resource</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.thor.common</groupId>
+				<groupId>com.ariescat</groupId>
 				<artifactId>common-route</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.thor.common</groupId>
+				<groupId>com.ariescat</groupId>
 				<artifactId>common-scheduler</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.thor.common</groupId>
+				<groupId>com.ariescat</groupId>
 				<artifactId>common-utility</artifactId>
 				<version>${project.version}</version>
 			</dependency>
