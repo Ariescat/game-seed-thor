@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.ariescat</groupId>
+		<artifactId>game-seed.zeus</artifactId>
+		<version>1.5</version>
+	</parent>
+
+	<artifactId>game-test</artifactId>
+	<version>1.0-SNAPSHOT</version>
+
+	<properties>
+		<project.release.main>com.mmorpg.mir.GameStart</project.release.main>
+	</properties>
+
+	<build>
+		<plugins>
+			<!--打包-->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<outputDirectory>${project.release.path}</outputDirectory>
+					<includes>
+						<include>**/*.class</include>
+						<include>META_INF/</include>
+					</includes>
+					<archive>
+						<manifest>
+							<mainClass>${project.release.main}</mainClass>
+							<addClasspath>true</addClasspath>
+							<classpathPrefix>lib/</classpathPrefix>
+							<useUniqueVersions>false</useUniqueVersions>
+						</manifest>
+						<manifestEntries>
+							<Class-Path>resources/</Class-Path>
+						</manifestEntries>
+					</archive>
+				</configuration>
+			</plugin>
+
+			<!--复制lib-->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+			</plugin>
+
+			<!--复制配置文件-->
+
+			<!--文档输出-->
+		</plugins>
+	</build>
+
+</project>
