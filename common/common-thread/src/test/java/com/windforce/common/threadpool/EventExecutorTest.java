@@ -1,7 +1,5 @@
-package com.windforce.threadpool;
+package com.windforce.common.threadpool;
 
-import com.windforce.common.threadpool.AbstractDispatcherHashCodeRunable;
-import com.windforce.common.threadpool.IdentityEventExecutorGroup;
 import io.netty.util.concurrent.ScheduledFuture;
 
 import java.util.Date;

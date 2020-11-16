@@ -154,8 +154,8 @@ public class ConfigDefinitionParser extends AbstractBeanDefinitionParser {
 			String type = e.getAttribute(SchemaNames.FORMAT_ATTRIBUTE_TYPE);
 			String suffix = e.getAttribute(SchemaNames.FORMAT_ATTRIBUTE_SUFFIX);
 			String location = e.getAttribute(SchemaNames.FORMAT_ATTRIBUTE_LOCATION);
-			if (org.apache.commons.lang.StringUtils.endsWith(location, File.pathSeparator)) {
-				location = org.apache.commons.lang.StringUtils.substringAfterLast(location, File.pathSeparator);
+			if (org.apache.commons.lang3.StringUtils.endsWith(location, File.pathSeparator)) {
+				location = org.apache.commons.lang3.StringUtils.substringAfterLast(location, File.pathSeparator);
 			}
 			return new FormatDefinition(location, type, suffix);
 		}

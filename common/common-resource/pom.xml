@@ -3,10 +3,9 @@
 		 xmlns="http://maven.apache.org/POM/4.0.0"
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<parent>
-		<groupId>com.ariescat</groupId>
+		<groupId>com.ariescat.zeus</groupId>
 		<artifactId>common</artifactId>
-		<version>1.5</version>
-		<relativePath>../pom.xml</relativePath>
+		<version>zeus-1.0</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 
@@ -16,7 +15,7 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.ariescat</groupId>
+			<groupId>com.ariescat.zeus</groupId>
 			<artifactId>common-utility</artifactId>
 		</dependency>
 		<dependency>
@@ -28,8 +27,8 @@
 			<artifactId>spring-test</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>commons-lang</groupId>
-			<artifactId>commons-lang</artifactId>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.poi</groupId>
@@ -40,7 +39,7 @@
 			<artifactId>poi-ooxml</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.apache.commons</groupId>
+			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
 		</dependency>
 		<dependency>

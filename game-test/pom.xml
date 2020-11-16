@@ -5,9 +5,9 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>com.ariescat</groupId>
-		<artifactId>game-seed.zeus</artifactId>
-		<version>1.5</version>
+		<groupId>com.ariescat.zeus</groupId>
+		<artifactId>game-seed</artifactId>
+		<version>zeus-1.0</version>
 	</parent>
 
 	<artifactId>game-test</artifactId>

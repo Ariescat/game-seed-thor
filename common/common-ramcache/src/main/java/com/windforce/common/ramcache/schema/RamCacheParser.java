@@ -7,7 +7,7 @@ import com.windforce.common.ramcache.aop.LockAspect;
 import com.windforce.common.ramcache.exception.ConfigurationException;
 import com.windforce.common.ramcache.persist.PersisterConfig;
 import com.windforce.common.ramcache.persist.PersisterType;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.helpers.FormattingTuple;

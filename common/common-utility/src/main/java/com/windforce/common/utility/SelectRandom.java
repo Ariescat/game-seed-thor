@@ -2,6 +2,7 @@ package com.windforce.common.utility;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * 随机数筛选器
@@ -55,8 +56,7 @@ public class SelectRandom<T> {
 	 */
 	public T run() {
 
-		long rLong = org.apache.commons.lang.math.RandomUtils.nextLong() % cusor;
-
+		long rLong = ThreadLocalRandom.current().nextLong() % cusor;
 		for (Element<T> element : this.elements) {
 			if (element.getProTop() > rLong && element.getProButtom() <= rLong) {
 				return element.getValue();

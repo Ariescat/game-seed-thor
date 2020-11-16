@@ -1,39 +1,44 @@
 package com.windforce.common.utility;
 
 import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * 随机数工具类
  *
  * @author frank
  */
-public final class RandomUtils extends org.apache.commons.lang.math.RandomUtils {
+public final class RandomUtils {
 
 	/**
 	 * 精确到小数点后10位
 	 */
 	public final static int RATE_BASE = 1000000000;
 
+	/**
+	 * 整形概率分母
+	 */
+	public final static int ODDS_BASE = 10000;
+
 	private RandomUtils() {
 		throw new IllegalAccessError("该类不允许实例化");
 	}
 
 	/**
-	 * 检查是否命中
+	 * 检查是否命中，分母为{@link #ODDS_BASE}
 	 *
-	 * @param rate 命中率
+	 * @param rate 整型命中率，超过分母则必中
 	 * @return 命中返回 true, 不命中返回 false
 	 */
 	public static boolean isHit(double rate) {
 		if (rate <= 0) {
 			return false;
 		}
-		int limit = (int) (rate * RATE_BASE);
-		int value = org.apache.commons.lang.math.RandomUtils.nextInt(RATE_BASE);
-		if (value <= limit) {
+		if (rate >= ODDS_BASE) {
 			return true;
 		}
-		return false;
+		int value = ThreadLocalRandom.current().nextInt(RATE_BASE);
+		return value <= rate;
 	}
 
 	/**
@@ -41,18 +46,17 @@ public final class RandomUtils extends org.apache.commons.lang.math.RandomUtils 
 	 *
 	 * @param rate   命中率
 	 * @param random 伪随机序列
-	 * @return
 	 */
 	public static boolean isHit(double rate, Random random) {
 		if (rate <= 0) {
 			return false;
 		}
 		int limit = (int) (rate * RATE_BASE);
-		int value = org.apache.commons.lang.math.RandomUtils.nextInt(random, RATE_BASE);
-		if (value <= limit) {
+		if (limit >= RATE_BASE) {
 			return true;
 		}
-		return false;
+		int value = random.nextInt(RATE_BASE);
+		return value <= limit;
 	}
 
 	/**

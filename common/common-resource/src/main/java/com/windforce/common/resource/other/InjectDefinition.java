@@ -1,7 +1,7 @@
 package com.windforce.common.resource.other;
 
 import com.windforce.common.resource.anno.Inject;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.context.ApplicationContext;
 
 import java.lang.reflect.Field;

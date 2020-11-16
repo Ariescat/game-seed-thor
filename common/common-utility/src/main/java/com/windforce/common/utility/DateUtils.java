@@ -13,7 +13,7 @@ import static java.util.Calendar.*;
 /**
  * 日期工具类，用于简化程序中的日期处理
  */
-public class DateUtils extends org.apache.commons.lang.time.DateUtils {
+public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
 
 	/**
 	 * 日期时间格式:年-月-日 时:分:秒[2011-5-5 20:00:00]
