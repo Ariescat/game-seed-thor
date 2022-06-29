@@ -19,7 +19,7 @@
 		<aspectjrt.version>1.8.13</aspectjrt.version>
 		<hibernate.version>5.1.0.Final</hibernate.version>
 		<guava.version>24.1.1-jre</guava.version>
-		<poi.version>3.7</poi.version>
+		<poi.version>4.1.1</poi.version>
 	</properties>
 
 	<modules>
