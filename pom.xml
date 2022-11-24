@@ -17,7 +17,7 @@
 		<spring.version>4.3.20.RELEASE</spring.version>
 		<cglib.version>2.2</cglib.version>
 		<aspectjrt.version>1.8.13</aspectjrt.version>
-		<hibernate.version>5.1.0.Final</hibernate.version>
+		<hibernate.version>5.3.20.Final</hibernate.version>
 		<guava.version>24.1.1-jre</guava.version>
 		<poi.version>3.7</poi.version>
 	</properties>
